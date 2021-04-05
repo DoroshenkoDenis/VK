@@ -1,8 +1,29 @@
 package ru.doroshenko.domain;
 
+import javax.sound.sampled.AudioFormat;
+import java.awt.*;
+
 public class PostContent {
     private String postText;
-    private Attachments attachments;
+
+    public Image getImage() {
+        return image;
+    }
+
+    public void setImage(Image image) {
+        this.image = image;
+    }
+
+    public AudioFormat getAudioFormat() {
+        return audioFormat;
+    }
+
+    public void setAudioFormat(AudioFormat audioFormat) {
+        this.audioFormat = audioFormat;
+    }
+
+    private Image image;
+    private AudioFormat audioFormat;
     private LikeWrap likeWrap;
 
     public String getPostText() {
@@ -11,14 +32,6 @@ public class PostContent {
 
     public void setPostText(String postText) {
         this.postText = postText;
-    }
-
-    public Attachments getAttachments() {
-        return attachments;
-    }
-
-    public void setAttachments(Attachments attachments) {
-        this.attachments = attachments;
     }
 
     public LikeWrap getLikeWrap() {
