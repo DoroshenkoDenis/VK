@@ -5,6 +5,9 @@ import java.awt.*;
 
 public class PostContent {
     private String postText;
+    private Image image;
+    private AudioFormat audioFormat;
+    private LikeWrap likeWrap;
 
     public Image getImage() {
         return image;
@@ -21,10 +24,6 @@ public class PostContent {
     public void setAudioFormat(AudioFormat audioFormat) {
         this.audioFormat = audioFormat;
     }
-
-    private Image image;
-    private AudioFormat audioFormat;
-    private LikeWrap likeWrap;
 
     public String getPostText() {
         return postText;
